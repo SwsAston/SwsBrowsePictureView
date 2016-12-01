@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QKm-hp-1XU">
+                                <rect key="frame" x="10" y="40" width="93" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QKm-hp-1XU" secondAttribute="height" multiplier="1:1" id="ZLa-d6-7FI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4r-T6-2M5">
+                                <rect key="frame" x="10" y="40" width="93" height="93"/>
+                                <connections>
+                                    <action selector="touchImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HHD-eF-MYY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="L4H-4J-T0i">
+                                <rect key="frame" x="113" y="40" width="94" height="93"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfR-Pk-pfq">
+                                <rect key="frame" x="113" y="40" width="94" height="93"/>
+                                <connections>
+                                    <action selector="touchImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ki-sX-G5q"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="A8L-vY-L57">
+                                <rect key="frame" x="217" y="40" width="93" height="93"/>
+                            </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfD-z7-I3k">
+                                <rect key="frame" x="217" y="40" width="93" height="93"/>
+                                <connections>
+                                    <action selector="touchImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2d-cq-q0W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5O-H4-pJc">
+                                <rect key="frame" x="137" y="153" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvM-gR-bhb">
+                                <rect key="frame" x="119" y="249" width="82" height="30"/>
+                                <state key="normal" title="ImageName"/>
+                                <connections>
+                                    <action selector="imageName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7nc-Io-NpA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8M-Hx-R8b">
+                                <rect key="frame" x="145" y="299" width="30" height="30"/>
+                                <state key="normal" title="URL"/>
+                                <connections>
+                                    <action selector="URL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1E0-zT-u6I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GfR-Pk-pfq" firstAttribute="top" secondItem="L4H-4J-T0i" secondAttribute="top" id="3oM-aK-71t"/>
+                            <constraint firstItem="B4r-T6-2M5" firstAttribute="leading" secondItem="QKm-hp-1XU" secondAttribute="leading" id="5Ub-1t-XVm"/>
+                            <constraint firstItem="A8L-vY-L57" firstAttribute="leading" secondItem="L4H-4J-T0i" secondAttribute="trailing" constant="10" id="5sb-Gv-fdM"/>
+                            <constraint firstItem="L4H-4J-T0i" firstAttribute="width" secondItem="QKm-hp-1XU" secondAttribute="width" id="FDx-23-ogJ"/>
+                            <constraint firstItem="TfD-z7-I3k" firstAttribute="top" secondItem="A8L-vY-L57" secondAttribute="top" id="HNw-po-aNx"/>
+                            <constraint firstItem="B4r-T6-2M5" firstAttribute="bottom" secondItem="QKm-hp-1XU" secondAttribute="bottom" id="JHD-7m-x3n"/>
+                            <constraint firstItem="GfR-Pk-pfq" firstAttribute="trailing" secondItem="L4H-4J-T0i" secondAttribute="trailing" id="OGC-XN-lDa"/>
+                            <constraint firstItem="dvM-gR-bhb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OZV-Ai-Ewc"/>
+                            <constraint firstItem="GfR-Pk-pfq" firstAttribute="leading" secondItem="L4H-4J-T0i" secondAttribute="leading" id="VsI-xB-wTN"/>
+                            <constraint firstItem="QKm-hp-1XU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="XOT-5f-x4R"/>
+                            <constraint firstItem="A8L-vY-L57" firstAttribute="height" secondItem="L4H-4J-T0i" secondAttribute="height" id="XxE-kI-z9t"/>
+                            <constraint firstItem="L4H-4J-T0i" firstAttribute="height" secondItem="QKm-hp-1XU" secondAttribute="height" id="Z6i-CU-v7R"/>
+                            <constraint firstItem="GfR-Pk-pfq" firstAttribute="bottom" secondItem="L4H-4J-T0i" secondAttribute="bottom" id="Z8p-w2-OOM"/>
+                            <constraint firstAttribute="trailing" secondItem="A8L-vY-L57" secondAttribute="trailing" constant="10" id="ZJf-kB-kja"/>
+                            <constraint firstItem="TfD-z7-I3k" firstAttribute="leading" secondItem="A8L-vY-L57" secondAttribute="leading" id="a3T-1Z-K7U"/>
+                            <constraint firstItem="A8L-vY-L57" firstAttribute="width" secondItem="L4H-4J-T0i" secondAttribute="width" id="bVu-Va-33c"/>
+                            <constraint firstItem="A8L-vY-L57" firstAttribute="centerY" secondItem="L4H-4J-T0i" secondAttribute="centerY" id="dU8-gq-ooW"/>
+                            <constraint firstItem="TfD-z7-I3k" firstAttribute="trailing" secondItem="A8L-vY-L57" secondAttribute="trailing" id="dYY-K7-CuB"/>
+                            <constraint firstItem="Z8M-Hx-R8b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ehm-qX-2zX"/>
+                            <constraint firstItem="L4H-4J-T0i" firstAttribute="leading" secondItem="QKm-hp-1XU" secondAttribute="trailing" constant="10" id="gHq-c1-dig"/>
+                            <constraint firstItem="B4r-T6-2M5" firstAttribute="top" secondItem="QKm-hp-1XU" secondAttribute="top" id="hWx-qu-3gP"/>
+                            <constraint firstItem="h5O-H4-pJc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lmU-CY-Dia"/>
+                            <constraint firstItem="B4r-T6-2M5" firstAttribute="trailing" secondItem="QKm-hp-1XU" secondAttribute="trailing" id="p0q-hC-ALz"/>
+                            <constraint firstItem="dvM-gR-bhb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="pe5-4e-LYi"/>
+                            <constraint firstItem="Z8M-Hx-R8b" firstAttribute="top" secondItem="dvM-gR-bhb" secondAttribute="bottom" constant="20" id="qlT-e6-xdf"/>
+                            <constraint firstItem="QKm-hp-1XU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="rHs-IO-kPf"/>
+                            <constraint firstItem="h5O-H4-pJc" firstAttribute="top" secondItem="L4H-4J-T0i" secondAttribute="bottom" constant="20" id="vhi-Yf-prO"/>
+                            <constraint firstItem="L4H-4J-T0i" firstAttribute="centerY" secondItem="QKm-hp-1XU" secondAttribute="centerY" id="x4a-Rx-tWk"/>
+                            <constraint firstItem="TfD-z7-I3k" firstAttribute="bottom" secondItem="A8L-vY-L57" secondAttribute="bottom" id="y8v-mF-MTc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="imageViewArray" destination="QKm-hp-1XU" id="HMZ-Mv-UxF"/>
+                        <outletCollection property="imageViewArray" destination="L4H-4J-T0i" id="N9a-Df-Sie"/>
+                        <outletCollection property="imageViewArray" destination="A8L-vY-L57" id="ztn-rZ-Iop"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.33333333333334" y="327.54666666666668"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0.jpg" width="214" height="195"/>
+        <image name="1.jpg" width="224" height="210"/>
+        <image name="2.jpg" width="180" height="180"/>
+    </resources>
+</document>
